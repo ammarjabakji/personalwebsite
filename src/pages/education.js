@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { ModalRoutingContext } from "gatsby-plugin-modal-routing";
 import styles from "./pages.css";
 
 import {
@@ -44,76 +45,83 @@ const edubox = {
     '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
 };
 
-const Education = () => (
-  <div className="whitebdy">
-    <Link className="close" to="/#menu">
-      X
-    </Link>
-    <VerticalTimeline className="vcusomcolor">
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={edubox}
-        contentArrowStyle={{ borderRight: "7px solid rgb(250, 175, 59)" }}
-        date="2011 - present"
-        icon={<Eduicon />}
-        iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
-      >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
+const ModalExamplePage = () => (
+  <ModalRoutingContext>
+    {({ modal, closeTo }) => (
+      <div>
+        <Link className="close" to="/#menu">
+          X
+        </Link>
+        <VerticalTimeline className="vcusomcolor">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={edubox}
+            contentArrowStyle={{ borderRight: "7px solid rgb(250, 175, 59)" }}
+            date="2011 - present"
+            icon={<Eduicon />}
+            iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Creative Director
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+            <p>
+              Creative Direction, User Experience, Visual Design, Project
+              Management, Team Leading
+            </p>
+          </VerticalTimelineElement>
 
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={edubox}
-        contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
-        date="2010 - 2011"
-        icon={<Eduicon />}
-        iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
-      >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online
-          Marketing
-        </p>
-      </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={edubox}
+            contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
+            date="2010 - 2011"
+            icon={<Eduicon />}
+            iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
+          >
+            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              San Francisco, CA
+            </h4>
+            <p>
+              Creative Direction, User Experience, Visual Design, SEO, Online
+              Marketing
+            </p>
+          </VerticalTimelineElement>
 
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={edubox}
-        contentArrowStyle={{ borderRight: "7px solid rgb(250, 175, 59)" }}
-        date="2008 - 2010"
-        icon={<Eduicon />}
-        iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2006 - 2008"
-        icon={<Eduicon />}
-        contentStyle={edubox}
-        contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
-        iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-    </VerticalTimeline>
-    <Link to="/">Go back to the homepage</Link>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={edubox}
+            contentArrowStyle={{ borderRight: "7px solid rgb(250, 175, 59)" }}
+            date="2008 - 2010"
+            icon={<Eduicon />}
+            iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
+          >
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Los Angeles, CA
+            </h4>
+            <p>User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2006 - 2008"
+            icon={<Eduicon />}
+            contentStyle={edubox}
+            contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
+            iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
+          >
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              San Francisco, CA
+            </h4>
+            <p>User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+        <Link to="/">Go back to the homepage</Link>
+      </div>
     )}
-  </div>
+  </ModalRoutingContext>
 );
 
-export default Education;
+export default ModalExamplePage;

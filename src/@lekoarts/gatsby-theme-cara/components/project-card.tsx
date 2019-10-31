@@ -13,6 +13,9 @@ type ProjectCardProps = {
 const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
   <Link
     to={link}
+    state={{
+      modal: true
+    }}
     sx={{
       width: `100%`,
       boxShadow: `lg`,

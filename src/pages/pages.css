@@ -26,3 +26,10 @@ span.vertical-timeline-element-date {
     padding-top: 70px;
     background: #fff;
 }
+
+.ReactModal__Content.ReactModal__Content--after-open {
+    top: 1px !important;
+    left: 1px !important;
+    right: 1px !important;
+    bottom: 1px !important;
+}
