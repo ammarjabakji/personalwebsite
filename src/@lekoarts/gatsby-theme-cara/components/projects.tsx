@@ -7,6 +7,7 @@ import SVG from "./svg";
 import { UpDown, UpDownWide } from "../styles/animations";
 import ProjectsMDX from "../sections/projects.mdx";
 import ProjectCard from "../components/project-card";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Projects = ({ offset }: { offset: number }) => (
   <div>

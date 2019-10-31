@@ -6,6 +6,13 @@ import Projects from "../components/projects";
 import About from "../components/about";
 import Contact from "../components/contact";
 
+export const onRouteUpdate = ({ location: { hash } }) => {
+  console.log(location);
+  if (hash) {
+    window.setTimeout(scrollTo(hash), 10);
+  }
+};
+
 const Cara = () => (
   <Layout>
     <Parallax pages={5}>
