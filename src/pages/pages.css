@@ -8,8 +8,8 @@ span.vertical-timeline-element-date {
 
 .close {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 4px;
+    right: 18px;
     font-size: 40px;
     text-decoration: none;
     font-family: sans-serif;
@@ -19,7 +19,8 @@ span.vertical-timeline-element-date {
     height: 50px;
     text-align: center;
     border-radius: 50px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3)
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 99;
 }
 
 .whitebdy {
@@ -32,4 +33,5 @@ span.vertical-timeline-element-date {
     left: 1px !important;
     right: 1px !important;
     bottom: 1px !important;
+    background: #f8f8f8 !important;
 }

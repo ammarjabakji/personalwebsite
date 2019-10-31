@@ -57,17 +57,25 @@ const ModalExamplePage = () => (
             className="vertical-timeline-element--work"
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(250, 175, 59)" }}
-            date="2011 - present"
+            date="2015 - 2017"
             icon={<Eduicon />}
             iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
-              Creative Director
+              Master of Science in Management Information Systems
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              Kadir Has Üniversitesi, TR
+            </h4>
             <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
+              This includes the study of Big Data Analytics, Data mining, Client
+              and Server Side Programming Languages, Technology Management and
+              Organizational Behavior. In addition, I published a conference
+              paper titled “Improving item-based recommendation accuracy with
+              user’s preferences on Apache Mahout” the implementation of my
+              algorithm on a dataset taken from amazon.com. My thesis was titled
+              “Methods to Improve Recommender Systems in e-Commerce and
+              e-Learning Environments”. And graduated with a 3.83 GPA.
             </p>
           </VerticalTimelineElement>
 
@@ -75,17 +83,24 @@ const ModalExamplePage = () => (
             className="vertical-timeline-element--work"
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
-            date="2010 - 2011"
+            date="2011 - 2013"
             icon={<Eduicon />}
             iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
           >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h3 className="vertical-timeline-element-title">
+              Master of Science in Management Information Systems
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+              University of Aleppo, SY
             </h4>
             <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
+              I studied six core modules with a focus on Advanced Databases,
+              Modern Themes in Information Systems, Electronic Business,
+              Advanced Decision Support Systems, Modern Methodologies in
+              Analysing Systems, and Modern Programming Languages. First stage
+              average GPA was 86%. My thesis title was “Supporting Online
+              Shopping Using Recommendation Algorithms”. Unfortunately, the
+              thesis was not finished.
             </p>
           </VerticalTimelineElement>
 
@@ -93,29 +108,43 @@ const ModalExamplePage = () => (
             className="vertical-timeline-element--work"
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(250, 175, 59)" }}
-            date="2008 - 2010"
+            date="2010 - 2011"
             icon={<Eduicon />}
             iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
           >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h3 className="vertical-timeline-element-title">
+              Postgraduate Diploma in Computer Science and Employment in
+              Economical Fields
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Los Angeles, CA
+              University of Aleppo, SY
             </h4>
-            <p>User Experience, Visual Design</p>
+            <p>
+              This programme took me one year to finish with a focus on advanced
+              programming language and database management systems. I created a
+              web application for the Office of Higher Education at University
+              of Aleppo. Successfully completed with average percent 80.70%.
+            </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2006 - 2008"
+            date="2006 - 2010"
             icon={<Eduicon />}
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
             iconStyle={{ background: "rgb(250, 175, 59)", color: "#fff" }}
           >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h3 className="vertical-timeline-element-title">
+              Bachelor of Economics in Statistics and Information Systems
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+              University of Aleppo, SY
             </h4>
-            <p>User Experience, Visual Design</p>
+            <p>
+              This degree is a combination of business and management modules,
+              statistics modules, and computer science modules. Successfully
+              completed with 75.23%.
+            </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
         <Link to="/">Go back to the homepage</Link>
