@@ -35,3 +35,9 @@ span.vertical-timeline-element-date {
     bottom: 1px !important;
     background: #f8f8f8 !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .ReactModal__Content.ReactModal__Content--after-open {
+        padding: 1rem !important;
+    }
+}
