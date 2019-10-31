@@ -1,0 +1,23 @@
+.vcusomcolor::before {
+    background: #7b7b7b !important
+}
+
+span.vertical-timeline-element-date {
+    color: #000;
+}
+
+.close {
+    position: fixed;
+    top: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background: #373737;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    left: 26px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3)
+}
