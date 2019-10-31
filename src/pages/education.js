@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./pages.css";
-import scrollTo from "gatsby-plugin-smoothscroll";
 
 import {
   VerticalTimeline,

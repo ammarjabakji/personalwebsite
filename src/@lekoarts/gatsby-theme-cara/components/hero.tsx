@@ -6,7 +6,6 @@ import Content from "../elements/content";
 import SVG from "./svg";
 import { UpDown, UpDownWide } from "../styles/animations";
 import Intro from "../sections/intro.mdx";
-import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Hero = ({ offset }: { offset: number }) => {
   const [colorMode, setColorMode] = useColorMode();
@@ -17,7 +16,6 @@ const Hero = ({ offset }: { offset: number }) => {
 
   return (
     <div>
-      <button onClick={() => scrollTo("#menu")}>My link</button>
       <button
         sx={{
           variant: `buttons.toggle`,
