@@ -37,7 +37,8 @@ span.vertical-timeline-element-date {
 }
 
 @media only screen and (max-width: 600px) {
-    .ReactModal__Content.ReactModal__Content--after-open {
+    .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
         padding: 1rem !important;
+        width: 83% !important;
     }
 }
