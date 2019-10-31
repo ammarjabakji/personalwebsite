@@ -20,6 +20,7 @@ const Projects = ({ offset }: { offset: number }) => (
     <Content speed={0.4} offset={offset + 0.2} factor={2}>
       <Inner>
         <div
+          id="menu"
           sx={{
             display: `grid`,
             gridGap: [4, 4, 4, 5],
