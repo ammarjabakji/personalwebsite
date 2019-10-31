@@ -49,7 +49,7 @@ const ModalExamplePage = () => (
   <ModalRoutingContext>
     {({ modal, closeTo }) => (
       <div>
-        <Link className="close" to="/#menu">
+        <Link className="close" to="/">
           X
         </Link>
         <VerticalTimeline className="vcusomcolor">
