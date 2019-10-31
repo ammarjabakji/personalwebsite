@@ -1,9 +1,9 @@
 {
   "private": true,
   "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "description": "Personal gatsby website using Parallax effects and animations",
   "version": "0.0.11",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Ammar Jabakji <ammarjabakji@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
