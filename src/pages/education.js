@@ -68,14 +68,11 @@ const ModalExamplePage = () => (
               Kadir Has Üniversitesi, TR
             </h4>
             <p>
-              This includes the study of Big Data Analytics, Data mining, Client
-              and Server Side Programming Languages, Technology Management and
-              Organizational Behavior. In addition, I published a conference
-              paper titled “Improving item-based recommendation accuracy with
-              user’s preferences on Apache Mahout” the implementation of my
-              algorithm on a dataset taken from amazon.com. My thesis was titled
-              “Methods to Improve Recommender Systems in e-Commerce and
-              e-Learning Environments”. And graduated with a 3.83 GPA.
+              I studied Big Data Analytics, Data mining, Client and Server Side
+              Programming Languages, Technology Management and Organizational
+              Behavior. In addition, I published a conference paper titled
+              “Improving item-based recommendation accuracy with user’s
+              preferences on Apache Mahout”. GPA score was 3.83.
             </p>
           </VerticalTimelineElement>
 
@@ -100,7 +97,7 @@ const ModalExamplePage = () => (
               Analysing Systems, and Modern Programming Languages. First stage
               average GPA was 86%. My thesis title was “Supporting Online
               Shopping Using Recommendation Algorithms”. Unfortunately, the
-              thesis was not finished.
+              thesis was not completed.
             </p>
           </VerticalTimelineElement>
 
@@ -147,7 +144,6 @@ const ModalExamplePage = () => (
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
-        <Link to="/">Go back to the homepage</Link>
       </div>
     )}
   </ModalRoutingContext>

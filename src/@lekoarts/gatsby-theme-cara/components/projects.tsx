@@ -8,6 +8,18 @@ import { UpDown, UpDownWide } from "../styles/animations";
 import ProjectsMDX from "../sections/projects.mdx";
 import ProjectCard from "../components/project-card";
 
+const Eduicon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    x="0"
+    y="0"
+    viewBox="0 0 1000 1000"
+    fill="#fff"
+  >
+    <path d="M948.6 367.7v162.1l34.1 34.1-71.1 74.1-72-71.9 49.3-44.9v-128C679.5 479.6 612.4 506.4 566 527.4s-79.9 20.8-125.9 3.5c-46-17.4-265.2-97.3-374.1-149.4-72.6-34.8-77.3-56.8 1.2-86.3 102.5-38.9 271.9-101.3 361.7-135.3 53.2-21.5 81.3-33.2 130.1-8.7 87.1 36 286.2 110.7 385.2 151.6 86.3 37.5 28.4 49.8 4.4 64.9zM576.1 591.6c50.6-20.9 118.9-55.4 193.3-87.3v256S673.2 862.7 504 862.7c-182.2 0-280.6-102.4-280.6-102.4v-239c57.4 23.4 121.9 43.5 200 70.3 48 17.1 109.1 23 152.7 0z"></path>
+  </svg>
+);
+
 const Projects = ({ offset }: { offset: number }) => (
   <div>
     <Divider
@@ -37,38 +49,24 @@ const Projects = ({ offset }: { offset: number }) => (
           </ProjectCard>
           <ProjectCard
             title="WORK EXPERIENCE"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
+            link="work"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
             Work history.
           </ProjectCard>
           <ProjectCard
             title="TECHNICAL SKILLS"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+            link="skills"
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
             Technologies that I quite good at.
           </ProjectCard>
           <ProjectCard
             title="PORTFOLIO"
-            link="https://www.behance.net/gallery/38068151/Eagle"
+            link="portfolio"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            List of website that built in the past.
-          </ProjectCard>
-          <ProjectCard
-            title="CERTIFICATES"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-          >
-            List of offline/online courses that I atteded.
-          </ProjectCard>
-          <ProjectCard
-            title="BLOG"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-          >
-            coming soon.
+            List of website that I built in the past.
           </ProjectCard>
         </div>
       </Inner>

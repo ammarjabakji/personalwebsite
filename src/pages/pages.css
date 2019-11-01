@@ -1,5 +1,5 @@
 .vcusomcolor::before {
-    background: #7b7b7b !important
+    background: #cfcfcf !important
 }
 
 span.vertical-timeline-element-date {
@@ -28,12 +28,14 @@ span.vertical-timeline-element-date {
     background: #fff;
 }
 
+
+
 .ReactModal__Content.ReactModal__Content--after-open {
     top: 1px !important;
     left: 1px !important;
     right: 1px !important;
     bottom: 1px !important;
-    background: #f8f8f8 !important;
+    background: #ffffff !important;
 }
 
 @media only screen and (max-width: 600px) {

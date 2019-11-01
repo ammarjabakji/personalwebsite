@@ -44,6 +44,15 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-htaccess`,
-    `gatsby-plugin-modal-routing`
+    `gatsby-plugin-modal-routing`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
   ]
 };
