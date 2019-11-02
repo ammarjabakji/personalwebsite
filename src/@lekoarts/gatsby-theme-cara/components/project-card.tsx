@@ -8,14 +8,19 @@ type ProjectCardProps = {
   title: string;
   children: React.ReactNode;
   bg: string;
+  modal: boolean;
 };
 
-const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({
+  link,
+  title,
+  children,
+  bg,
+  modal
+}: ProjectCardProps) => (
   <Link
     to={link}
-    state={{
-      modal: true
-    }}
+    state={modal}
     sx={{
       width: `100%`,
       boxShadow: `lg`,

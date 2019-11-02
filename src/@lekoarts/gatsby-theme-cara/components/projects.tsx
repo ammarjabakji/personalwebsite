@@ -43,6 +43,7 @@ const Projects = ({ offset }: { offset: number }) => (
           <ProjectCard
             title="Education"
             link="education"
+            modal={{ modal: true }}
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
             My academic journey.
@@ -50,6 +51,7 @@ const Projects = ({ offset }: { offset: number }) => (
           <ProjectCard
             title="WORK EXPERIENCE"
             link="work"
+            modal={{ modal: true }}
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
             Work history.
@@ -57,6 +59,7 @@ const Projects = ({ offset }: { offset: number }) => (
           <ProjectCard
             title="TECHNICAL SKILLS"
             link="skills"
+            modal={{ modal: true }}
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
             Technologies that I quite good at.
