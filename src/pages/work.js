@@ -9,15 +9,23 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const Eduicon = () => (
+const Workicon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="779.11"
+    height="779.11"
+    fill="#fff"
     x="0"
     y="0"
-    viewBox="0 0 1000 1000"
-    fill="#fff"
+    enableBackground="new 0 0 779.11 779.11"
+    version="1.1"
+    viewBox="0 0 779.11 779.11"
+    xmlSpace="preserve"
   >
-    <path d="M948.6 367.7v162.1l34.1 34.1-71.1 74.1-72-71.9 49.3-44.9v-128C679.5 479.6 612.4 506.4 566 527.4s-79.9 20.8-125.9 3.5c-46-17.4-265.2-97.3-374.1-149.4-72.6-34.8-77.3-56.8 1.2-86.3 102.5-38.9 271.9-101.3 361.7-135.3 53.2-21.5 81.3-33.2 130.1-8.7 87.1 36 286.2 110.7 385.2 151.6 86.3 37.5 28.4 49.8 4.4 64.9zM576.1 591.6c50.6-20.9 118.9-55.4 193.3-87.3v256S673.2 862.7 504 862.7c-182.2 0-280.6-102.4-280.6-102.4v-239c57.4 23.4 121.9 43.5 200 70.3 48 17.1 109.1 23 152.7 0z"></path>
+    <path d="M662.914 632.351h-408.44c-11.49 0-20.806 9.315-20.806 20.806v12.805c0 11.49 9.315 20.81 20.806 20.81h477.262v-54.418l-68.822-.003z"></path>
+    <circle cx="211.187" cy="189.625" r="115.19"></circle>
+    <path d="M492.234 472.147l-263.969-.146-6.25-.02v-30.632l-.217-25.64c0-61.245-49.651-110.898-110.899-110.898-2.075 0-4.136.07-6.184.182l-.156-.182C46.813 304.813 0 351.625 0 409.372v295.303h222.015V578.876l-2.937-.231c-.209-.019-.261.002-.391.002-15.021 0-29.417-6.324-39.562-17.399l-90.112-98.363a7.693 7.693 0 01.476-10.874 7.694 7.694 0 0110.874.476l90.111 98.362c7.322 7.993 17.648 12.881 28.521 13.039l10.594.152h262.645c25.375 0 45.947-20.571 45.947-45.947.001-25.376-20.572-45.946-45.947-45.946z"></path>
+    <path d="M765.197 309.111c-10.744-3.681-22.439 2.049-26.123 12.794l-87.209 254.59H339.803c-11.356 0-20.567 9.206-20.567 20.564s9.211 20.566 20.567 20.566H666.31c6.994 0 13.168-3.503 16.879-8.841a20.493 20.493 0 003.059-5.729L778 335.225c3.67-10.739-2.053-22.435-12.803-26.114z"></path>
   </svg>
 );
 
@@ -58,7 +66,7 @@ const ModalExamplePage = () => (
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
             date="2015 - present"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -76,7 +84,7 @@ const ModalExamplePage = () => (
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
             date="2016 - 2017"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -93,7 +101,7 @@ const ModalExamplePage = () => (
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
             date="2015 - 2015"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -110,7 +118,7 @@ const ModalExamplePage = () => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2015 - 2015"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
@@ -133,7 +141,7 @@ const ModalExamplePage = () => (
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
             date="2014 - 2014"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">Soctag</h3>
@@ -145,7 +153,7 @@ const ModalExamplePage = () => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2013 - 2014"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
@@ -167,7 +175,7 @@ const ModalExamplePage = () => (
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
             date="2012 - 2013"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -187,7 +195,7 @@ const ModalExamplePage = () => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2012 - 2012"
-            icon={<Eduicon />}
+            icon={<Workicon />}
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
