@@ -20,15 +20,25 @@
 }
 
 @media (min-width: 767px) {
-    .portfolio-wraper {
+    /* .portfolio-wraper {
         background: #f5f9fb;
         border-radius: 16px;
-        margin: 50px;
         padding: 50px;
-    }
+    } */
+
+    /* .portfolio-wraper {
+        background: #f5f9fb;
+        margin: -8px !important;
+        padding: 50px;
+    } */
 }
 
-
+.fullpage,
+.portfolio-wraper {
+    background: #fff;
+    margin: -8px !important;
+    padding: 50px;
+}
 
 .portfolio-img {
 

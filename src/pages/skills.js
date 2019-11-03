@@ -9,18 +9,18 @@ import Bootstrap from "./logos/Bootstrap.png";
 import react from "./logos/react.png";
 import gatsby from "./logos/gatsby.png";
 
-import php from "./logos/php.webp";
-import nodejs from "./logos/nodejs.webp";
-import ExpressJS from "./logos/ExpressJS.webp";
-import GraphQL from "./logos/GraphQL.webp";
-import WordPress from "./logos/WordPress.webp";
-import contentful from "./logos/contentful.webp";
-import Drupal from "./logos/Drupal.webp";
+import php from "./logos/php.png";
+import nodejs from "./logos/nodejs.png";
+import ExpressJS from "./logos/ExpressJS.png";
+import GraphQL from "./logos/GraphQL.png";
+import WordPress from "./logos/WordPress.png";
+import contentful from "./logos/contentful.png";
+import Drupal from "./logos/Drupal.png";
 
 const ModalskillsPage = () => (
   <ModalRoutingContext>
     {({ modal, closeTo }) => (
-      <div>
+      <div className="whitebdy">
         <Link className={styles.close} to="/">
           X
         </Link>
@@ -61,7 +61,12 @@ const ModalskillsPage = () => (
                 width="120"
               />
               <img src={ExpressJS} className={styles.logo} alt="ExpressJS" />
-              <img src={GraphQL} className={styles.logo} alt="GraphQL" />
+              <img
+                src={GraphQL}
+                className={styles.logo}
+                alt="GraphQL"
+                width="200"
+              />
             </div>
 
             <h3 className={styles.skillTitle}>CMS</h3>

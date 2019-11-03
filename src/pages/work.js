@@ -48,7 +48,7 @@ const edubox = {
 const ModalExamplePage = () => (
   <ModalRoutingContext>
     {({ modal, closeTo }) => (
-      <div>
+      <div className="whitebdy">
         <Link className="close" to="/">
           X
         </Link>

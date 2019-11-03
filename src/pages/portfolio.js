@@ -30,7 +30,7 @@ const ModalportfolioPage = () => {
   return (
     <ModalRoutingContext>
       {({ modal, closeTo }) => (
-        <div>
+        <div className="fullpage">
           <Link className="close" to="/">
             X
           </Link>
