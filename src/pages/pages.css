@@ -44,3 +44,8 @@ span.vertical-timeline-element-date {
         width: 83% !important;
     }
 }
+
+.vertical-timeline-element-content a {
+    color: #fff;
+    font-style: italic;
+}

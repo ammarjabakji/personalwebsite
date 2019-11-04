@@ -2,12 +2,14 @@
 import { Link } from "gatsby";
 import React from "react";
 import { jsx } from "theme-ui";
+import styles from "./project.module.css";
 
 type ProjectCardProps = {
   link: string;
   title: string;
   children: React.ReactNode;
   bg: string;
+  icon: string;
   modal: boolean;
 };
 
@@ -16,7 +18,8 @@ const ProjectCard = ({
   title,
   children,
   bg,
-  modal
+  modal,
+  icon
 }: ProjectCardProps) => (
   <Link
     to={link}
@@ -39,20 +42,25 @@ const ProjectCard = ({
       }
     }}
   >
-    <div sx={{ opacity: 0.75, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
-      {children}
-    </div>
     <div
-      sx={{
-        textTransform: `uppercase`,
-        letterSpacing: `wide`,
-        pt: 4,
-        fontSize: [4, 5],
-        fontWeight: `medium`,
-        lineHeight: 1
-      }}
+      className={styles.bgicon}
+      sx={{ background: icon || `none`, backgroundSize: "17%" }}
     >
-      {title}
+      <div sx={{ opacity: 0.75, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>
+        {children}
+      </div>
+      <div
+        sx={{
+          textTransform: `uppercase`,
+          letterSpacing: `wide`,
+          pt: 4,
+          fontSize: [4, 5],
+          fontWeight: `medium`,
+          lineHeight: 1
+        }}
+      >
+        {title}
+      </div>
     </div>
   </Link>
 

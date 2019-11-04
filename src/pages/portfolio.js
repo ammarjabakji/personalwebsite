@@ -34,6 +34,7 @@ const ModalportfolioPage = () => {
           <Link className="close" to="/">
             X
           </Link>
+          <h2 className={styles.ptitle}>Portfolio</h2>
           <div className={styles.portfolioWraper}>
             {/* <Img fluid={data.placeholderImage.childImageSharp.fluid} /> */}
             {data.Images.nodes.map(image => (

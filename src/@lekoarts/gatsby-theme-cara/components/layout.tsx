@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import React from "react"
-import { Global } from "@emotion/core"
-import { css, Styled, jsx } from "theme-ui"
-import SEO from "./seo"
+import React from "react";
+import { Global } from "@emotion/core";
+import { css, Styled, jsx } from "theme-ui";
+import SEO from "./seo";
 
-type LayoutProps = { children?: React.ReactNode; className?: string }
+type LayoutProps = { children?: React.ReactNode; className?: string };
 
 const Layout = ({ children, className }: LayoutProps) => (
   <Styled.root data-testid="theme-root">
@@ -13,14 +13,14 @@ const Layout = ({ children, className }: LayoutProps) => (
         "*": {
           boxSizing: `inherit`,
           "&:before": {
-            boxSizing: `inherit`,
+            boxSizing: `inherit`
           },
           "&:after": {
-            boxSizing: `inherit`,
-          },
+            boxSizing: `inherit`
+          }
         },
         html: {
-          fontSize: `18px`,
+          fontSize: `18px`
         },
         body: {
           margin: 0,
@@ -28,17 +28,17 @@ const Layout = ({ children, className }: LayoutProps) => (
           boxSizing: `border-box`,
           textRendering: `optimizeLegibility`,
           WebkitFontSmoothing: `antialiased`,
-          MozOsxFontSmoothing: `grayscale`,
+          MozOsxFontSmoothing: `grayscale`
         },
         "::selection": {
           backgroundColor: `primary`,
-          color: `white`,
-        },
+          color: `white`
+        }
       })}
     />
     <SEO />
     <main className={className}>{children}</main>
   </Styled.root>
-)
+);
 
-export default Layout
+export default Layout;
