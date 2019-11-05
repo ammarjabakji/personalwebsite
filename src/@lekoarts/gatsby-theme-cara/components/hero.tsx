@@ -174,21 +174,6 @@ const Hero = ({ offset }: { offset: number }) => {
           />
 
           <Intro />
-          <button
-            sx={{
-              variant: `buttons.toggle`,
-              fontWeight: `semibold`,
-              display: `block`,
-              mx: `auto`,
-              mb: 3,
-              marginTop: "20px"
-            }}
-            onClick={toggleColorMode}
-            type="button"
-            aria-label="Toggle dark mode"
-          >
-            {isDark ? `Light Theme` : `Dark Theme`}
-          </button>
         </Inner>
       </Content>
     </div>
