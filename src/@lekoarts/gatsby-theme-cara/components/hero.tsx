@@ -15,8 +15,8 @@ const Hero = ({ offset }: { offset: number }) => {
   };
 
   return (
-    <div>
-      <Divider speed={0.2} offset={offset}>
+    <div style={{ marginTop: "50px" }}>
+      <Divider speed={0.6} offset={offset}>
         <UpDown>
           <SVG
             icon="triangle"
@@ -162,6 +162,21 @@ const Hero = ({ offset }: { offset: number }) => {
       </Divider>
       <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
         <Inner>
+          <button
+            sx={{
+              variant: `buttons.toggle`,
+              fontWeight: `semibold`,
+              display: `block`,
+              mx: `auto`,
+              mb: 3,
+              marginTop: "50px"
+            }}
+            onClick={toggleColorMode}
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            {isDark ? `Light Theme` : `Dark Theme`}
+          </button>
           <img
             style={{
               borderRadius: `100%`,
