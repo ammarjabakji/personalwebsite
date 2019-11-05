@@ -162,6 +162,18 @@ const Hero = ({ offset }: { offset: number }) => {
       </Divider>
       <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
         <Inner>
+          <img
+            style={{
+              borderRadius: `100%`,
+              border: `5px solid #fff`
+            }}
+            width="160"
+            height="160"
+            src="https://media.licdn.com/dms/image/C5603AQEdmD3R9Ogq3Q/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=AXGWLosw91DXD3Yg9KCyPz4dh1qIFCOSOu5sK51qeu4"
+            alt="Ammar  photo"
+          />
+
+          <Intro />
           <button
             sx={{
               variant: `buttons.toggle`,
@@ -177,18 +189,6 @@ const Hero = ({ offset }: { offset: number }) => {
           >
             {isDark ? `Light Theme` : `Dark Theme`}
           </button>
-          <img
-            style={{
-              borderRadius: `100%`,
-              border: `5px solid #fff`
-            }}
-            width="160"
-            height="160"
-            src="https://media.licdn.com/dms/image/C5603AQEdmD3R9Ogq3Q/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=AXGWLosw91DXD3Yg9KCyPz4dh1qIFCOSOu5sK51qeu4"
-            alt="LekoArts Logo"
-          />
-
-          <Intro />
         </Inner>
       </Content>
     </div>
