@@ -168,8 +168,7 @@ const Hero = ({ offset }: { offset: number }) => {
               fontWeight: `semibold`,
               display: `block`,
               mx: `auto`,
-              mb: 3,
-              marginTop: "150px"
+              marginTop: "80px"
             }}
             onClick={toggleColorMode}
             type="button"
@@ -198,8 +197,6 @@ const Hero = ({ offset }: { offset: number }) => {
               fontWeight: `semibold`,
               display: `block`,
               mx: `auto`,
-              mb: 3,
-              marginTop: "50px",
               textDecoration: "none",
               display: "block",
               width: "250px",
