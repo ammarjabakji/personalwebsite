@@ -169,7 +169,7 @@ const Hero = ({ offset }: { offset: number }) => {
               display: `block`,
               mx: `auto`,
               mb: 3,
-              marginTop: "50px"
+              marginTop: "150px"
             }}
             onClick={toggleColorMode}
             type="button"
@@ -189,6 +189,25 @@ const Hero = ({ offset }: { offset: number }) => {
           />
 
           <Intro />
+          <a
+            href="https://drive.google.com/file/d/1zrKwTcUkzO_uAgazNDO9cAIBTFPA40ro/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              variant: `buttons.toggle`,
+              fontWeight: `semibold`,
+              display: `block`,
+              mx: `auto`,
+              mb: 3,
+              marginTop: "50px",
+              textDecoration: "none",
+              display: "block",
+              width: "250px",
+              textAlign: "center"
+            }}
+          >
+            Download My Resume
+          </a>
         </Inner>
       </Content>
     </div>

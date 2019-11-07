@@ -75,7 +75,7 @@ const Projects = ({ offset }: { offset: number }) => (
             bg="linear-gradient(to right,#2a3fcd 0%,#c000ff 100%)"
             icon={`url(${cert}) no-repeat center right `}
           >
-            List of attended courses, coaching, and volunteer work.
+            List of attended courses and coaching.
           </ProjectCard>
         </div>
       </Inner>
