@@ -43,6 +43,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-htaccess`,
 
     `gatsby-plugin-modal-routing`,
     {
@@ -53,16 +54,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: "gatsby-plugin-htaccess",
-      options: {
-        RewriteBase: "/public/",
-        https: true,
-        www: false,
-        SymLinksIfOwnerMatch: true,
-        host: "ammar.rokkey.com"
-      }
-    }
+    `gatsby-transformer-sharp`
   ]
 };
