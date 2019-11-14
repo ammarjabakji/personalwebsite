@@ -25,11 +25,13 @@
     "gatsby-plugin-modal-routing": "^1.0.2",
     "gatsby-plugin-netlify": "^2.1.6",
     "gatsby-plugin-offline": "^2.2.7",
+    "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sharp": "^2.2.36",
     "gatsby-plugin-smoothscroll": "^1.0.3",
     "gatsby-transformer-sharp": "^2.3.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
     "react-vertical-timeline-component": "^2.5.0"
   },
   "devDependencies": {
