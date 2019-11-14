@@ -1,25 +1,25 @@
-import React from "react"
-import Helmet from "react-helmet"
-import useSiteMetadata from "../hooks/use-site-metadata"
+import React from "react";
+import Helmet from "react-helmet";
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 const defaultProps = {
   title: ``,
   description: false,
   pathname: false,
   image: false,
-  children: null,
-}
+  children: null
+};
 
 type Props = {
-  title?: string
-  description?: string
-  pathname?: string
-  image?: string
-  children?: React.ReactNode
-}
+  title?: string;
+  description?: string;
+  pathname?: string;
+  image?: string;
+  children?: React.ReactNode;
+};
 
 const SEO = ({ title, description, pathname, image, children }: Props) => {
-  const site = useSiteMetadata()
+  const site = useSiteMetadata();
 
   const {
     siteTitle,
@@ -28,17 +28,21 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
     siteDescription: defaultDescription,
     siteLanguage,
     siteImage: defaultImage,
-    author,
-  } = site
+    author
+  } = site;
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    image: `${siteUrl}${image || defaultImage}`,
-  }
+    image: `${siteUrl}${image || defaultImage}`
+  };
   return (
-    <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
+    <Helmet
+      title={title}
+      defaultTitle={defaultTitle}
+      titleTemplate={`%s | ${siteTitle}`}
+    >
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -56,14 +60,28 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
       <meta name="twitter:image:alt" content={seo.description} />
       <meta name="twitter:creator" content={author} />
       <meta name="gatsby-theme" content="@lekoarts/gatsby-theme-cara" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
       {children}
     </Helmet>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;
 
-SEO.defaultProps = defaultProps
+SEO.defaultProps = defaultProps;

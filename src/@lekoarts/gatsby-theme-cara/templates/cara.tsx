@@ -1,7 +1,6 @@
 import React from "react";
 import { Parallax } from "react-spring/renderprops-addons.cjs";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
 import About from "../components/about";
@@ -16,7 +15,6 @@ export const onRouteUpdate = ({ location: { hash } }) => {
 
 const Cara = () => (
   <Layout>
-    <SEO />
     <Parallax pages={5}>
       <Hero offset={0} />
       <Projects offset={1} />
