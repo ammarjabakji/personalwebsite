@@ -1,21 +1,22 @@
 /** @jsx jsx */
-import { jsx, useColorMode } from "theme-ui";
-import Divider from "../elements/divider";
-import Inner from "../elements/inner";
-import Content from "../elements/content";
-import SVG from "./svg";
-import { UpDown, UpDownWide } from "../styles/animations";
-import Intro from "../sections/intro.mdx";
+import { jsx, useColorMode } from 'theme-ui'
+import Divider from '../elements/divider'
+import Inner from '../elements/inner'
+import Content from '../elements/content'
+import SVG from './svg'
+import { UpDown, UpDownWide } from '../styles/animations'
+import Intro from '../sections/intro.mdx'
+import ammar from './ammar.jpg'
 
 const Hero = ({ offset }: { offset: number }) => {
-  const [colorMode, setColorMode] = useColorMode();
-  const isDark = colorMode === `dark`;
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `light` : `dark`);
-  };
+    setColorMode(isDark ? `light` : `dark`)
+  }
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ marginTop: '50px' }}>
       <Divider speed={0.6} offset={offset}>
         <UpDown>
           <SVG
@@ -169,7 +170,7 @@ const Hero = ({ offset }: { offset: number }) => {
               display: `block`,
               mx: `auto`,
               // mb: 3,
-              marginTop: "120px"
+              marginTop: '120px'
             }}
             onClick={toggleColorMode}
             type="button"
@@ -184,8 +185,8 @@ const Hero = ({ offset }: { offset: number }) => {
             }}
             width="160"
             height="160"
-            src="https://media.licdn.com/dms/image/C5603AQEdmD3R9Ogq3Q/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=AXGWLosw91DXD3Yg9KCyPz4dh1qIFCOSOu5sK51qeu4"
-            alt="Ammar  photo"
+            src={ammar}
+            alt="Ammar Jabakji"
           />
 
           <Intro />
@@ -198,10 +199,10 @@ const Hero = ({ offset }: { offset: number }) => {
               fontWeight: `semibold`,
               display: `block`,
               mx: `auto`,
-              textDecoration: "none",
-              display: "block",
-              width: "250px",
-              textAlign: "center"
+              textDecoration: 'none',
+              display: 'block',
+              width: '250px',
+              textAlign: 'center'
             }}
           >
             Download My Resume
@@ -209,7 +210,7 @@ const Hero = ({ offset }: { offset: number }) => {
         </Inner>
       </Content>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
