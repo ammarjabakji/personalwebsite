@@ -16,10 +16,15 @@ const ModalportfolioPage = () => {
       ) {
         nodes {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 420, maxHeight: 220) {
               ...GatsbyImageSharpFluid
             }
           }
+          # childImageSharp {
+          #   fixed(width: 420, height: 220) {
+          #     ...GatsbyImageSharpFixed
+          #   }
+          # }
           name
         }
       }
