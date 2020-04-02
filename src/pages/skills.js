@@ -1,44 +1,44 @@
-import React from "react";
-import { Link } from "gatsby";
-import { ModalRoutingContext } from "gatsby-plugin-modal-routing";
-import styles from "./skills.module.css";
-import css from "./logos/CSS.png";
-import html5 from "./logos/html5.png";
-import js from "./logos/js.png";
-import Bootstrap from "./logos/Bootstrap.png";
-import react from "./logos/react.png";
-import gatsby from "./logos/gatsby.png";
+import React from 'react'
+import { Link } from 'gatsby'
+import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
+import styles from './skills.module.css'
+import css from './logos/CSS.png'
+import html5 from './logos/html5.png'
+import js from './logos/js.png'
+import Bootstrap from './logos/Bootstrap.png'
+import react from './logos/react.png'
+import gatsby from './logos/gatsby.png'
 
-import php from "./logos/php.png";
-import nodejs from "./logos/nodejs.png";
-import ExpressJS from "./logos/ExpressJS.png";
-import GraphQL from "./logos/graphql.png";
+import php from './logos/php.png'
+import nodejs from './logos/nodejs.png'
+import ExpressJS from './logos/ExpressJS.png'
+import GraphQL from './logos/graphql.png'
 
-import MongoDB from "./logos/MongoDB.png";
-import mysql from "./logos/mysql.png";
-import oracle from "./logos/oracle.png";
+import MongoDB from './logos/MongoDB.png'
+import mysql from './logos/mysql.png'
+import oracle from './logos/oracle.png'
 
-import WordPress from "./logos/WordPress.png";
-import contentful from "./logos/contentful.png";
-import Drupal from "./logos/Drupal.png";
-import woocommerce from "./logos/woocommerce.png";
+import WordPress from './logos/WordPress.png'
+import contentful from './logos/contentful.png'
+import Drupal from './logos/Drupal.png'
+import woocommerce from './logos/woocommerce.png'
 
-import r from "./logos/r.png";
-import spss from "./logos/spss.png";
-import hadoop from "./logos/hadoop.png";
-import mahout from "./logos/mahout.png";
+import r from './logos/r.png'
+import spss from './logos/spss.png'
+import hadoop from './logos/hadoop.png'
+import mahout from './logos/mahout.png'
 
-import swift from "./logos/swift.png";
-import reactnative from "./logos/reactnative.png";
+import swift from './logos/swift.png'
+import reactnative from './logos/reactnative.png'
 
-import gcloud from "./logos/gcloud.png";
-import azure from "./logos/azure.png";
-import aws from "./logos/aws.png";
+import gcloud from './logos/gcloud.png'
+import azure from './logos/azure.png'
+import aws from './logos/aws.png'
 
-import github from "./logos/github.png";
-import npm from "./logos/npm.png";
-import pwa from "./logos/pwa.png";
-import amp from "./logos/amp.png";
+import github from './logos/github.png'
+import npm from './logos/npm.png'
+import pwa from './logos/pwa.png'
+import amp from './logos/amp.png'
 
 const ModalskillsPage = () => (
   <ModalRoutingContext>
@@ -115,13 +115,13 @@ const ModalskillsPage = () => (
                 className={styles.logo}
                 alt="ExpressJS"
               />
-              <img
+              {/* <img
                 data-sal="slide-up"
                 src={GraphQL}
                 className={styles.logo}
                 alt="GraphQL"
                 width="120"
-              />
+              /> */}
             </div>
             <h3 className={styles.skillTitle}>Databases</h3>
             <div className={styles.wrap}>
@@ -282,6 +282,6 @@ const ModalskillsPage = () => (
       </div>
     )}
   </ModalRoutingContext>
-);
+)
 
-export default ModalskillsPage;
+export default ModalskillsPage
