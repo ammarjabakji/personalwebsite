@@ -12,7 +12,7 @@ import gatsby from './logos/gatsby.png'
 import php from './logos/php.png'
 import nodejs from './logos/nodejs.png'
 import ExpressJS from './logos/ExpressJS.png'
-import GraphQL from './logos/graphql.png'
+// import GraphQL from './logos/graphql.png'
 
 import MongoDB from './logos/MongoDB.png'
 import mysql from './logos/mysql.png'
