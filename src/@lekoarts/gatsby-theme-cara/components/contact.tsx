@@ -37,7 +37,8 @@ const Contact = ({ offset }: { offset: number }) => (
       <Inner>
         <ContactMDX />
       </Inner>
-      <Footer />
+      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      {/* <Footer /> */}
     </Content>
     <Divider speed={0.1} offset={offset}>
       <UpDown>
