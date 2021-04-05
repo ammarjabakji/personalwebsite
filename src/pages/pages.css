@@ -1,51 +1,53 @@
 .vcusomcolor::before {
-    background: #cfcfcf !important
+  background: #cfcfcf !important;
 }
 
 span.vertical-timeline-element-date {
-    color: #000;
+  color: #000;
 }
 
 .close {
-    position: fixed;
-    top: 4px;
-    right: 18px;
-    font-size: 40px;
-    text-decoration: none;
-    font-family: sans-serif;
-    background: #373737;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 50px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    z-index: 99;
+  position: fixed;
+  top: 4px;
+  right: 18px;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: #373737;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  line-height: 1.2;
 }
 
 .whitebdy {
-    background: #f5f9fb;
-    border-radius: 16px;
+  background: #f5f9fb;
+  border-radius: 16px;
 }
 
-
-
 .ReactModal__Content.ReactModal__Content--after-open {
-    top: 1px !important;
-    left: 1px !important;
-    right: 1px !important;
-    bottom: 1px !important;
-    background: #ffffff !important;
+  top: 1px !important;
+  left: 1px !important;
+  right: 1px !important;
+  bottom: 1px !important;
+  background: #ffffff !important;
+}
+a {
+  color: #67b2f9 !important;
 }
 
 @media only screen and (max-width: 600px) {
-    .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-        padding: 1rem !important;
-        width: 83% !important;
-    }
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    padding: 1rem !important;
+    width: 83% !important;
+  }
 }
 
 .vertical-timeline-element-content a {
-    color: #fff;
-    font-style: italic;
+  color: #fff;
+  font-style: italic;
 }

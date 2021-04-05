@@ -5,7 +5,7 @@ import styles from "./pages.css";
 
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -42,7 +42,7 @@ const edubox = {
   textShadow: "0 2px 10px rgba(0, 0, 0, 0.3)",
 
   fontFamily:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
 };
 
 const ModalExamplePage = () => (
@@ -55,7 +55,27 @@ const ModalExamplePage = () => (
         <VerticalTimeline className="vcusomcolor">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2019 "
+            date="2021 "
+            icon={<Eduicon />}
+            contentStyle={edubox}
+            contentArrowStyle={{ borderRight: "7px solid rgb(190, 46, 252)" }}
+            iconStyle={{ background: "rgb(65, 82, 211)", color: "#fff" }}
+          >
+            <h3 className="vertical-timeline-element-title">
+              React Native bootcamp
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Kodluyoruz</h4>
+            <a
+              href=" https://drive.google.com/file/d/1_NYEEMWAvYryssZ4UMtQ9_-u6wi15fh2/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Certificate link
+            </a>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2020 "
             icon={<Eduicon />}
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(190, 46, 252)" }}
