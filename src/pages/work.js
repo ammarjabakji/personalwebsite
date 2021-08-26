@@ -65,17 +65,16 @@ const ModalExamplePage = () => (
             className="vertical-timeline-element--work"
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
-            date="2015 - present"
+            date="2018 - present"
             icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
-              Self-employed Entrepreneur
+             React native developer
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Freelancer</h4>
+            <h4 className="vertical-timeline-element-subtitle">Remote work</h4>
             <p>
-              Developing websites and database applications for many people from
-              all over the world. Also, I do coaching and volunteer work.
+              Developing both mobile and web application using react js and react native with fully functioned API intergration for a different companies. Also, I did coaching and volunteer work.
             </p>
           </VerticalTimelineElement>
 
