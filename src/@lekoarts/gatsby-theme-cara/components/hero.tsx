@@ -191,7 +191,7 @@ const Hero = ({ offset }: { offset: number }) => {
 
           <Intro />
           <a
-            href="https://bit.ly/3kqfD2Z"
+            href="https://drive.google.com/file/d/1k_nr_eVGNjgrrmFx0XX4YeJaDXltc2rI/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
