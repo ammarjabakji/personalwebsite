@@ -1,21 +1,21 @@
 require(`dotenv`).config({
-  path: `.env`
+  path: `.env`,
 });
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Ammar Jabakji`
+    siteTitleAlt: `Ammar Jabakji`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
-      options: {}
+      options: {},
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID
-      }
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -31,15 +31,15 @@ module.exports = {
           {
             src: `/android-chrome-192x192.png`,
             sizes: `192x192`,
-            type: `image/png`
+            type: `image/png`,
           },
           {
             src: `/android-chrome-512x512.png`,
             sizes: `512x512`,
-            type: `image/png`
-          }
-        ]
-      }
+            type: `image/png`,
+          },
+        ],
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
@@ -49,9 +49,9 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -62,8 +62,8 @@ module.exports = {
         trackingId: "UA-152519214-1",
         head: true,
         anonymize: true,
-        respectDNT: true
-      }
-    }
-  ]
+        respectDNT: true,
+      },
+    },
+  ],
 };
