@@ -16,7 +16,7 @@ const Hero = ({ offset }: { offset: number }) => {
   }
 
   return (
-    <div style={{ marginTop: '50px' }}>
+    <div style={{ marginTop: '170px' }}>
       <Divider speed={0.6} offset={offset}>
         <UpDown>
           <SVG
@@ -163,6 +163,7 @@ const Hero = ({ offset }: { offset: number }) => {
       </Divider>
       <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset}>
         <Inner>
+    
           <button
             sx={{
               variant: `buttons.toggle`,
@@ -178,18 +179,20 @@ const Hero = ({ offset }: { offset: number }) => {
           >
             {isDark ? `Light Theme` : `Dark Theme`}
           </button>
-          <img
+   
+    
+
+          <Intro />
+          {/* <img
             style={{
               borderRadius: `100%`,
-              border: `5px solid #fff`
+              border: `5px solid #fff`,
             }}
             width="160"
             height="160"
             src={ammar}
             alt="Ammar Jabakji"
-          />
-
-          <Intro />
+          /> */}
           <a
             href="https://drive.google.com/file/d/1VzhxO586mCrxj5_6y9aYEmm5LPrJ05iY/view?usp=sharing"
             target="_blank"
