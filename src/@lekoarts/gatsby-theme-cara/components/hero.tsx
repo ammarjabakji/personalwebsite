@@ -194,7 +194,7 @@ const Hero = ({ offset }: { offset: number }) => {
             alt="Ammar Jabakji"
           /> */}
           <a
-            href="https://drive.google.com/file/d/1SKygAFTfllURqvJ9WWQbLJgkLC-5NK-k/view?usp=sharing"
+            href="https://drive.google.com/file/d/1xF9u1_zNq4zbplvTAsIVnZ-C5_cKxsOw/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
