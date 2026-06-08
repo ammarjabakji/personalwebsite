@@ -64,6 +64,29 @@ const ModalExamplePage = () => (
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
             contentStyle={edubox}
+            contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
+            date='2024 - Present'
+            icon={<Workicon />}
+            iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
+          >
+            <h3 className='vertical-timeline-element-title'>
+              Full-Stack Engineer & Founder
+            </h3>
+            <h4 className='vertical-timeline-element-subtitle'>
+              Rokkey - Istanbul
+            </h4>
+            <p>
+              I develop and maintain web & mobile applications end-to-end while
+              running Rokkey, my digital agency. I manage multiple products
+              across clients (Larimar Training, SlabFix, Top Level, Nivara, and
+              more), optimize performance, SEO, and online marketing, and handle
+              server security and ongoing improvements.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className='vertical-timeline-element--work'
+            contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(212, 21, 89)" }}
             date='2021 - 2024'
             icon={<Workicon />}
@@ -122,7 +145,7 @@ const ModalExamplePage = () => (
             className='vertical-timeline-element--work'
             contentStyle={edubox}
             contentArrowStyle={{ borderRight: "7px solid rgb(234, 52, 134)" }}
-            date='2015 - 2015'
+            date='2015 - 2016'
             icon={<Workicon />}
             iconStyle={{ background: "rgb(234, 52, 134)", color: "#fff" }}
           >
